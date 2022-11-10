@@ -1,0 +1,140 @@
+.contenedor{
+    width: 70%;
+ min-height: 400px;
+ margin: 50px;
+ display: flex;
+ border: 4px solid #020202;
+ 
+}
+.contenedor .derecha{
+    background: #ffffff;
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor .izquierda{
+    background: rgb(7, 101, 189);
+    width: 50%;
+    text-align: center;
+}
+
+.derecha h2{
+    color:rgb(12, 147, 180);
+}
+.derecha #figura{
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background: rgb(172, 42, 42);
+    transition: 1s;
+}
+    
+.izquierda button{
+    border: 2px solid black;
+    background: rgb(233, 232, 232);
+    color:#020202;
+    padding: 8px 24px;
+    font-size: 20px;
+    margin: 10px;
+    transition: .4s;
+}
+
+.izquierda button:hover{
+    border-radius: 15px 0 15px 0;
+    background: #ddd237;
+    color: #0c0c0c;
+}
+ 
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    transition: 1s;
+    background: #ffffff;
+    border:4px solid #000000;
+}
+
+#figura.rombo{
+    border-style: 20%;
+    transform: rotate(315deg);
+    transition: 1s;
+    background: #ffffff;
+    border:4px solid #000000;
+}
+
+#figura.to{
+    transform: translateY(-100px);
+    transition: 1s;
+    background: #ffffff;
+    border:4px solid #000000;
+}
+
+#figura.left{
+    transform: translateX(-100px);
+    transition: 1s;
+    background: #ffffff;
+    border:4px solid #000000; 
+}
+
+#figura.bottom{
+    transform: translateY(100px);
+    transition:1s;
+    background:#ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.right{
+    transform: translateX(100px);
+    transition: 1s;
+    background: #ffffff;
+    border:4px solid #000000;
+}
+
+#figura.diagonaliz {
+
+    transform: translate(-100px, -100px);
+    transition: 1s;
+    background:#ffffff;
+    border: 4px solid #000000; 
+  }
+
+#figura.diagonalinf {
+    transform: translate(100px, 100px);
+    transition: 1s;
+    background:#ffffff;
+    border: 4px solid #000000; 
+}
+
+#gif{
+    display: none;
+}
+
+#figura.trapecio {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid #428bca;
+    background: #ffffff;
+}
+
+#figura.triangulo {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f0ad4e;
+    background: #ffffff;
+}
+
+#figura.luna {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #d9534f;
+    -webkit-box-shadow: 30px 10px 0 #d9534f;
+    box-shadow: 30px 10px 0 #d9534f;
+    background: #ffffff;
+}
